@@ -1,11 +1,13 @@
 import React from 'react';
-import './App.css';
+//import './App.css';
+import './components/AddToDo'
+import AddToDo from './components/AddToDo';
 
 function App() {
   return (
     <div>
       <header>
-          <p>Hello World!</p>
+          <AddToDo />
       </header>
     </div>
   );
