@@ -1,14 +1,18 @@
 import React from 'react';
 //import './App.css';
-import './components/AddToDo'
+import './components/AddToDo';
+import Layout from './components/Layout';
 import AddToDo from './components/AddToDo';
 
 function App() {
   return (
     <div>
       <header>
-          <AddToDo />
       </header>
+      <main>
+        <Layout />
+        <AddToDo />
+      </main>
     </div>
   );
 }
