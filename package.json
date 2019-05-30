@@ -27,5 +27,17 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  }
+  },
+  "description": "ToDo App to better understand Redux",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/adrianmorales80/learnRedux.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/adrianmorales80/learnRedux/issues"
+  },
+  "homepage": "https://github.com/adrianmorales80/learnRedux#readme"
 }
