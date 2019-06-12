@@ -1,32 +1,32 @@
 //import "./styles.css";
 //import ReactDOM from "react-dom";
 import React, { memo } from "react";
-import { useInputValue, useTodos } from "./custom-hooks";
+import { useAddInputValue, useTodos } from "./custom-hooks";
 import Layout from "./components/Layout";
 import AddTodo from "./components/AddToDo";
 import TodoList from "./components/ToDoList";
 import FilterToDo from "./components/FilterToDo";
 
 const TodoApp = memo(props => {
-  const { inputValue, changeInput, clearInput, keyInput } = useInputValue();
+  const { inputAddValue, changeAddInput, clearInput, keyInput } = useAddInputValue();
   const { todos, addTodo, checkTodo, removeTodo } = useTodos();
 
   const clearInputAndAddTodo = () => {
     clearInput();
-    addTodo(inputValue);
+    addTodo(inputAddValue);
   };
 
   return (
     <Layout>
       <AddTodo
-        inputValue={inputValue}
-        onInputChange={changeInput}
+        inputValue={inputAddValue}
+        onInputChange={changeAddInput}
         onButtonClick={clearInputAndAddTodo}
         onInputKeyPress={event => keyInput(event, clearInputAndAddTodo)}
       />
       <FilterToDo
-        inputValue={inputValue}
-        onInputChange={changeInput}
+        //inputValue={inputValue}
+        //onInputChange={changeInput}
         onButtonClick={clearInputAndAddTodo}
         onInputKeyPress={event => keyInput(event, clearInputAndAddTodo)}
       />

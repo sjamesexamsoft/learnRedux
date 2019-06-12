@@ -1,15 +1,15 @@
 import { useState } from "react";
 
-export const useInputValue = (initialValue = "") => {
-  const [inputValue, setInputValue] = useState(initialValue);
+export const useAddInputValue = (initialValue = "") => {
+  const [inputAddValue, setInputValue] = useState(initialValue);
 
   return {
-    inputValue,
-    changeInput: event => setInputValue(event.target.value),
+    inputAddValue,
+    changeAddInput: event => setInputValue(event.target.value),
     clearInput: () => setInputValue(""),
     keyInput: (event, callback) => {
       if (event.which === 13 || event.keyCode === 13) {
-        callback(inputValue);
+        callback(inputAddValue);
         return true;
       }
 
