@@ -20,7 +20,7 @@ const FilterTodo = memo(props => (
             variant="outlined"
             onClick={props.onButtonClick}
           >
-            Filter
+            Clear
           </Button>
         </Grid>
       </Grid>
