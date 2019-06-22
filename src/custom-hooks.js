@@ -1,7 +1,6 @@
 import { useState } from "react";
 
 export const useAddInputValue = (initialValue = "") => {
-  console.log("here")
   const [inputAddValue, setInputValue] = useState(initialValue);
 
   return {

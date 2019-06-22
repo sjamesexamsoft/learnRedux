@@ -8,7 +8,6 @@ import TodoList from "./components/ToDoList";
 import FilterToDo from "./components/FilterToDo";
 
 const TodoApp = memo(props => {
-  console.log("here0")
   const { inputAddValue, changeAddInput, clearInput, keyInput } = useAddInputValue();
   const {
     inputAddValue: filterValue,
